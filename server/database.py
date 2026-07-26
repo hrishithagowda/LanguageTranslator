@@ -4,7 +4,9 @@ import os
 
 load_dotenv()
 
-client = MongoClient(os.getenv("MONGODB_URI"))
+client = MongoClient(
+    os.getenv("MONGODB_URI") or os.getenv("MONGO_URI")
+)
 
 try:
     client.admin.command("ping")
