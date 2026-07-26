@@ -1,0 +1,229 @@
+/* ================= BODY ================= */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f3e8ff);
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.app-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 55px;
+}
+
+.title {
+  background: linear-gradient(90deg, #2563eb, #9333ea, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h1 {
+  margin: 0;
+  font-size: 55px;
+}
+
+/* ================= LANGUAGE SECTION ================= */
+
+.language-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* ================= HEADINGS ================= */
+
+h2 {
+  color: #1e293b;
+  margin-top: 25px;
+}
+
+/* ================= LABELS ================= */
+
+p {
+  font-size: 18px;
+  color: #374151;
+  font-weight: bold;
+}
+
+/* ================= TEXTAREA ================= */
+
+textarea {
+  width: 100%;
+  max-width: 650px;
+  height: 150px;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #d1d5db;
+  border-radius: 15px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+/* ================= DROPDOWN ================= */
+
+select {
+  width: 220px;
+  height: 45px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 2px solid #d1d5db;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* ================= BUTTON GROUP ================= */
+
+.button-group {
+  margin: 25px 0;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+  width: 170px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= BUTTON COLORS ================= */
+
+.translate-btn {
+  background: #2563eb;
+}
+
+.copy-btn {
+  background: #9333ea;
+}
+
+.clear-btn {
+  background: #ef4444;
+}
+
+.history-btn {
+  background: #f43f5e;
+}
+
+.swap-btn{
+  width:120px;
+  background:#06b6d4;
+}
+
+/* ================= ERROR ================= */
+
+.error-message {
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ================= HISTORY ================= */
+
+.history-card{
+  width:90%;
+  max-width:700px;
+  margin:18px auto;
+  padding:18px 22px;
+  background:white;
+  border-radius:16px;
+  border-left:6px solid #2563eb;
+  box-shadow:0 6px 15px rgba(0,0,0,.12);
+  text-align:left;
+  transition:.3s;
+}
+
+.history-card:hover{
+  transform:translateY(-4px);
+}
+
+.history-card h3{
+  margin:0 0 12px;
+  color:#2563eb;
+}
+
+.history-card p{
+  margin:8px 0;
+  font-size:17px;
+  line-height:1.5;
+}
+.history-card:first-child{
+    margin-top:30px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .app-container {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .logo {
+    font-size: 42px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  select {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  textarea {
+    height: 130px;
+  }
+
+  
+}
