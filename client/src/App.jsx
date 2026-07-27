@@ -37,8 +37,8 @@ function App() {
 
   async function loadHistory() {
     const response = await fetch(
-      "http://127.0.0.1:8000/history"
-    );
+  "https://language-translator-server.onrender.com/history"
+);
 
     const data = await response.json();
 
@@ -46,9 +46,12 @@ function App() {
   }
 
   async function clearHistory() {
-    await fetch("http://127.0.0.1:8000/history", {
-      method: "DELETE",
-    });
+    await fetch(
+  "https://language-translator-server.onrender.com/history",
+  {
+    method: "DELETE",
+  }
+);
 
     setHistory([]);
   }
